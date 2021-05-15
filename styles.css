@@ -2,5 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: red;
+}
+
+.add-game-btn {
+    background-color: rgb(250, 197, 62);
+    width: 20vw;
+    height: 20vh;
 }
