@@ -11,12 +11,42 @@
 
 <body>
     <div class="container">
-        <header>
-            <h1>Checkpoint</h1>
-        </header>
         <main class="main-display">
+            <header>
+                <h1 class="page-title">Checkpoint</h1>
+            </header>
             <button class="add-game-btn" type="button">+</button>
         </main>
+        <nav class="nav-bar">
+            <h3 class="nav-title">Info</h3>
+            <ul class="nav-links">
+                <li>Games</li>
+                <li>Completed</li>
+                <li>Archived</li>
+                <li>See All Notes</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="modal-window">
+            <a class="close-modal" href="#">Cancel</a>
+            <p>Enter game information:</p>
+            <form id="modal-input" method="POST" action="#">
+                <p>
+                    <label>
+                        Game Title:
+                        <input type="text" autofocus required name="game-title" value="">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Platform:
+                        <input type="text" required name="platform" value="">
+                    </label>
+                </p>
+            </form>
+        </div>
     </div>
 
 
