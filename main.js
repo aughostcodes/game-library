@@ -5,7 +5,7 @@ const addGameBtn = document.querySelector('.add-game-btn');
 
 
 function addGameToLibrary() {
-    console.log('added game in headcanon');
+    console.log('added game in headcanon'); 
     console.log(Object.create(Game.prototype));
 }
 
@@ -69,6 +69,7 @@ const modalInit = function () {
         // document.querySelector('.modal-input').attachEvent('onsubmit', checkForm);
         window.attachEvent('onload', modalInit);
     }
+    openModal();
 }
 
 addGameBtn.addEventListener('click', modalInit);
