@@ -24,7 +24,7 @@ const modalInit = function () {
     const modalWindow = document.querySelector('.modal-window');
 
     const openModal = function (e) {
-        // modalWrapper.className = 'overlay';
+        modalWrapper.className = 'overlay';
         let overflow = modalWindow.offsetHeight - document.documentElement.clientHeight;
         if (overflow > 0) {
             modalWindow.style.maxHeight = (parseInt(window.getComputedStyle(modalWindow).height) - overflow) + 'px';
