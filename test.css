@@ -5,11 +5,11 @@
 }
 
 #modal_wrapper.overlay::before {
-    content: " ";
+    content: "";
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 0;
     top: 0;
     left: 0;
     background: #000;
@@ -18,7 +18,7 @@
 
 #modal_window {
     display: none;
-    z-index: 200;
+    z-index: 1;
     position: fixed;
     left: 50%;
     top: 50%;
